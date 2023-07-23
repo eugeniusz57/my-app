@@ -43,8 +43,9 @@ const NavBar = () => {
         <Link href="/" className={styles.logo}>
           MyApp
         </Link>
-        <DarkModeToggle />
+
         <ul className={styles.links}>
+          <DarkModeToggle />
           {navbarLinks.map(({ id, title, url }) => (
             <li key={id}>
               <Link href={url}>{title}</Link>

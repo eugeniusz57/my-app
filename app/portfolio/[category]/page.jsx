@@ -4,8 +4,8 @@ import Button from "@/components/Button/Button";
 import { items } from "./data";
 import { notFound } from "next/navigation";
 
-const getData = (cat) => {
-  const data = items[cat];
+const getData = (category) => {
+  const data = items[category];
 
   if (data) {
     return data;
